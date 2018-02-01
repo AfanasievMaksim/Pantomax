@@ -1,0 +1,42 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.description {
+  @include card;
+  display: flex;
+  width: 100%;
+  background-image: url("img/bg__girl.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 100%;
+  margin-bottom: 60px;
+  &__item {
+    width: 544px;
+    margin-left: 40px;
+  }
+  &__title {
+    @include title;
+    @include SansNarrow;
+    margin-top: 30px;
+  }
+  &__text {
+    @include Sans;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .description {
+    background-image: none;
+    &__item {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+}
+
+

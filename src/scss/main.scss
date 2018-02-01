@@ -1,0 +1,35 @@
+@import "partials/params";
+@import "partials/mixins";
+
+html, body {
+  @include clear;
+  width: 100%;
+  background: $backgroung;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @include clear;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.orange {
+  color: $orange;
+}
+
+.big {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
